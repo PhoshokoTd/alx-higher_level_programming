@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+
 def uppercase(str):
-    tmp = list(str)
-    for i in range(len(tmp)):
-        if (ord(tmp[i]) > 96 and ord(tmp[i] < 123):
-                tmp[i] = chr(ord(tmp[i] - 32)
-    print("{}".format("").join(tmp)))
+    for i in range(len(str)):
+        uni_code = ord(str[i])
+        if uni_code >= 97 and uni_code <= 122:
+            uni_code = uni_code - 32
+        print("{}".format(chr(uni_code)), end='')
+    print()
